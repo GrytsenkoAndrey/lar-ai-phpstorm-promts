@@ -2,6 +2,11 @@
 
 [Article Link](https://laraveldaily.com/post/my-cursor-rules-for-laravel)
 
+## Files
+
+- .junie/guidelines.md file in PhpStorm Junie AI
+- CLAUDE.md file in Claude Code
+
 
 ## General code instructions
  
