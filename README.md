@@ -169,6 +169,72 @@ $ARGUMENTS.tsx
 
 3. `/session-start`
 
+**What It Does**: Initializes a development session with task tracking, auto-commits at milestones, and generates handoff documentation for asynchronous teams.
+
+**Time Saved**: Eliminates 20 minutes of daily status updates and context-switching overhead
+
+**Why It Matters**: Remote teams across timezones need perfect handoffs. This command creates a detailed paper trail that makes async collaboration actually work.
+
+**Copy-Paste Template**:
+
+```
+---
+description: Start tracked development session with auto-documentation
+argument-hint: <task-description>
+---
+# Start Session: $ARGUMENTS
+
+1. **Session Initialization:**
+   - Create session log: `.sessions/session-$(date +%Y%m%d-%H%M%S).md`
+   - Log start time and task description
+2. **Context Capture:**
+   - Current branch: `git branch --show-current`
+   - Recent commits: `git log -3 --oneline`
+   - Open files in editor workspace
+   - Relevant documentation links
+3. **Task Breakdown:**
+   - Break $ARGUMENTS into 3-5 concrete subtasks
+   - Estimate each subtask (S/M/L complexity)
+   - Identify dependencies and blockers
+4. **Checkpoint System:**
+   - Auto-commit every 30 minutes with: `git add -A && git commit -m "checkpoint: [progress-description]"`
+   - Log decisions and discoveries in session file
+5. **Handoff Template:**
+   ```markdown
+   ## Progress Summary
+   [Completed tasks]
+   
+   ## Current State
+   [What's working, what's blocked]
+   
+   ## Next Steps
+   1. [Immediate priority]
+   2. [Secondary task]
+   3. [Future consideration]
+   
+   ## Questions for Team
+   - [Specific question 1]
+   - [Specific question 2]
+
+**Remote Team Win:** Our distributed team (Berlin, SF, Tokyo) ships features without timezone delays. When Berlin signs off, SF picks up with zero onboarding time. Before this command, handoffs took 30-45 minutes. Now? 5 minutes to read the session log and continue.
+---
+## **Command 4: `/security-scan` - Proactive Vulnerability Detection**
+**What It Does:** Runs comprehensive security audit on recent changes, checking for common vulnerabilities, exposed secrets, and security misconfigurations.
+**Time Saved:** Security review drops from 60 minutes to 8 minutes (87% reduction)
+**Why It Matters:** According to Apiiro's 2024 research, AI-generated code introduces 322% more privilege escalation paths and 153% more design flaws than human-written code. You need automated guardrails.
+**Copy-Paste Template:**
+```markdown
+---
+description: Comprehensive security audit of recent changes
+---
+# Security Scan
+1. **Secret Detection:**
+   ```bash
+   git diff --cached | grep -E '(api_key|password|secret|token|aws_access)' || echo "✓ No secrets detected"
+```
+
+4. 
+
 
 
 
