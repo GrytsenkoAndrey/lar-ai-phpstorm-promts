@@ -78,7 +78,7 @@ In the Assert phase, perform these assertions when applicable:
 
 **What It Does**: Fetches a GitHub issue, extracts requirements, and generates a complete implementation spec with tasks, test cases, and edge cases.
 
-Time Saved: Planning phase drops from 90 minutes to 15 minutes (83% reduction)
+**Time Saved**: Planning phase drops from 90 minutes to 15 minutes (83% reduction)
 
 **Why It Matters**: Most bugs come from misunderstood requirements. This command forces comprehensive planning before a single line of code is written.
 
@@ -118,7 +118,54 @@ Create `specs/issue-$ARGUMENTS-spec.md` with complete analysis.
 
 2. `/feature-scaffold`
 
+**What It Does:** Generates complete feature folder structure with boilerplate components, tests, types, and documentation following your team’s conventions.
 
+**Time Saved**: Setup time drops from 35 minutes to 2 minutes (94% reduction)
+
+**Why It Matters**: Consistency is everything. When every feature follows the same structure, code reviews are faster, onboarding is smoother, and bugs hide less effectively.
+
+**Copy-Paste Template**:
+
+```
+---
+description: Generate feature scaffold with tests, types, and docs
+argument-hint: <feature-name>
+---
+# Scaffold Feature: $ARGUMENTS
+
+1. Create feature directory: `src/features/$ARGUMENTS/`
+2. **Generate Core Files:**
+
+$ARGUMENTS.tsx 
+# Main component $ARGUMENTS.test.tsx 
+# Unit tests $ARGUMENTS.types.ts 
+# TypeScript interfaces $ARGUMENTS.styles.ts 
+# Styled components index.ts 
+# Barrel export
+
+3. **Component Template:**
+- Props interface with JSDoc
+- Error boundary wrapper
+- Loading and error states
+- Accessibility attributes
+
+4. **Test Template:**
+- Render test
+- User interaction tests
+- Error state tests
+- Accessibility tests (axe-core)
+5. **Documentation:**
+- Create `$ARGUMENTS/README.md` with:
+  - Feature overview
+  - Props documentation
+  - Usage examples
+  - Known limitations
+6. **Git Integration:**
+- Stage all files: `git add src/features/$ARGUMENTS/`
+- Create feature branch: `git checkout -b feature/$ARGUMENTS`
+```
+
+**Team Impact:** Since implementing this command, our code review time dropped 41%. Reviewers spend less time checking structure and more time evaluating logic. New team members contribute production code on day 3 instead of week 3.
 
 3. `/session-start`
 
