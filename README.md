@@ -67,3 +67,76 @@ In the Assert phase, perform these assertions when applicable:
 - Structure/data returned from Act (Blade or JSON): functions like `assertViewHas()`, `assertSee()`, `assertDontSee()` or `assertJsonContains()`
 - Or, redirect assertions like `assertRedirect()` and `assertSessionHas()` in case of Flash session values passed
 - DB changes if any create/update/delete operation was performed: functions like `assertDatabaseHas()`, `assertDatabaseMissing()`, `expect($variable)->toBe()` and similar.
+
+
+
+# Claude Templates
+
+## Top 10 Claude Commands
+
+1. `/analyze-issue`
+
+**What It Does**: Fetches a GitHub issue, extracts requirements, and generates a complete implementation spec with tasks, test cases, and edge cases.
+
+Time Saved: Planning phase drops from 90 minutes to 15 minutes (83% reduction)
+
+**Why It Matters**: Most bugs come from misunderstood requirements. This command forces comprehensive planning before a single line of code is written.
+
+**Copy-Paste Template**:
+
+```
+---
+description: Generate implementation spec from GitHub issue
+argument-hint: <issue-number>
+---
+# Analyze Issue #$ARGUMENTS
+
+1. Fetch issue: `gh issue view $ARGUMENTS`
+2. **Requirements Analysis**
+   - Extract user story and acceptance criteria
+   - List functional requirements
+   - Note non-functional requirements (performance, security)
+3. **Technical Specification**
+   - Files to modify/create
+   - API contracts (request/response schemas)
+   - Database schema changes
+   - External dependencies
+4. **Implementation Plan**
+   - Break into 5-7 sub-tasks with complexity estimates (1-5 scale)
+   - Identify risks and implementation order
+5. **Test Strategy**
+   - Unit tests, integration tests, E2E scenarios
+   - Edge cases to cover
+6. **Definition of Done**
+   - Functionality checklist, test coverage requirements
+   - Documentation updates, performance benchmarks
+Create `specs/issue-$ARGUMENTS-spec.md` with complete analysis.
+```
+
+**Real Impact**: Last sprint, this command caught 12 edge cases in planning that would’ve become production bugs. One of those edge cases involved payment processing — catching it early saved us a potential $xK in refunds and customer trust issues.
+
+
+2. `/feature-scaffold`
+
+
+
+3. `/session-start`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
