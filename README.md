@@ -1,6 +1,7 @@
 # lar-ai-phpstorm-promts
 
-[Article Link](https://laraveldaily.com/post/my-cursor-rules-for-laravel)
+- [Article Link](https://laraveldaily.com/post/my-cursor-rules-for-laravel)
+- [Claude templates](#claude-templates)
 
 ## Files
 
