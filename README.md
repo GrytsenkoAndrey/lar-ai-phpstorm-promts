@@ -72,7 +72,7 @@ In the Assert phase, perform these assertions when applicable:
 
 # Claude Templates
 
-## Top 10 Claude Commands
+## Top Claude Commands
 
 1. `/analyze-issue`
 
@@ -233,7 +233,6 @@ description: Comprehensive security audit of recent changes
    git diff --cached | grep -E '(api_key|password|secret|token|aws_access)' || echo "✓ No secrets detected"
 ```
 
-4. 
 
 
 
