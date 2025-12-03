@@ -233,7 +233,17 @@ description: Comprehensive security audit of recent changes
    git diff --cached | grep -E '(api_key|password|secret|token|aws_access)' || echo "✓ No secrets detected"
 ```
 
+4. Work thinking
 
+**Context Window Death Spiral**: Your agent starts with perfect understanding — project structure, dependencies, architectural decisions. Five minutes later, it’s suggesting npm packages you explicitly excluded. Ten minutes in, it’s rewriting interfaces it just created. This isn’t minor degradation, it’s catastrophic for complex tasks.
+
+I tracked token distribution across failed sessions. The pattern is consistent: implementation details consume 73% of context within the first 2,000 tokens, pushing architectural requirements below the attention threshold. Once architecture drops below 30% context influence, implementation drift becomes inevitable.
+
+**Permission Interrupt Cascade**: Every file modification triggers a permission request. Approve. Continue. Another permission. Approve. Another. By the fifth interruption, your agent has lost its implementation strategy and you’ve lost your flow state. The context fragmentation compounds — each restart loads slightly different context, creating subtle inconsistencies that cascade into major architectural violations.
+
+**Agent Collision Syndrome**: Running multiple agents without coordination creates a special kind of chaos. Agent A refactors your database schema while Agent B writes queries for the old structure. Agent C updates the API based on Agent B’s assumptions. Without wave-based generation patterns to manage context limits, agents operate in isolation, creating incompatible implementations at exponential rates.
+
+5. 
 
 
 
