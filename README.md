@@ -247,6 +247,18 @@ I tracked token distribution across failed sessions. The pattern is consistent: 
 
 # Ultimate Claude Code Sheet
 
+## Core Session Commands
+
+These are your bread and butter for managing conversations:
+
+/help — Your first stop when stuck. Displays usage help and command reference.
+
+/clear — Wipes the conversation history clean. Use this when you want a fresh start or when context gets too cluttered.
+
+/exit — Gracefully exits the REPL session. (Or just use Ctrl+D)
+
+/status — Shows version info and connectivity status. Great for troubleshooting.
+
 
 
 
