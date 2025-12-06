@@ -371,10 +371,10 @@ claude mcp add --transport stdio github npx -y @modelcontextprotocol/server-gith
 ```
 
 Use MCP resources:
-```
-    @github:issue://123 — Reference external resources
-    /mcp__github__list_prs — Execute prompts from MCP servers
-```
+
+- @github:issue://123 — Reference external resources
+- /mcp__github__list_prs — Execute prompts from MCP servers
+
 
 Manage servers:
 ```
