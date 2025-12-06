@@ -275,7 +275,39 @@ Here’s where Claude Code really shines. Managing context effectively is the di
 Pro tip: Use the # prefix for quick memory adds. Type # Use 2-space indentation for JavaScript files and it's instantly added to CLAUDE.md.
 
 
+## Configuration Commands
 
+Customize Claude Code to match your workflow:
+
+/config — Opens the Settings interface. This is your control panel for everything from model selection to privacy settings.
+
+/model — Quickly switch between Claude models (Sonnet, Opus, Haiku) without opening full settings.
+
+/permissions — View and update tool permissions. Critical for security-conscious development.
+
+/output-style — Configure how Claude formats its responses. Prefer minimal output? Set it here.
+
+/privacy-settings — Control what data gets shared and stored.
+Session Analytics
+
+## Track your usage and costs:
+
+/usage — Shows your plan limits and rate limit status. Know before you hit the wall.
+
+/export [filename] — Export the conversation to a file or clipboard. Great for sharing solutions or creating documentation.
+
+/rewind — Time travel for your code. Rewind to any checkpoint in the conversation or code state.
+Development Tools
+
+## Commands specifically designed for coding workflows:
+
+/review — Requests a code review of your current changes. Like having a senior dev look over your shoulder.
+
+/todos — Lists all TODO items Claude is tracking from your conversation. Never lose track of action items.
+
+/doctor — Runs health checks on your Claude Code installation. Troubleshooting made easy.
+
+/add-dir — Add additional working directories to the session. Useful for monorepos or multi-project work.
 
 
 
