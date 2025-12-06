@@ -310,7 +310,52 @@ Development Tools
 /add-dir — Add additional working directories to the session. Useful for monorepos or multi-project work.
 
 
+## Key Agent Commands
 
+/agents — Manage your custom AI sub-agents. View available agents, create new ones, or configure existing agents.
+
+/bashes — List and manage background bash tasks. Sub-agents can run long-running commands without blocking your main conversation.
+Agent Location Hierarchy
+
+## Claude Code looks for agents in this priority order:
+
+1. .claude/agents/ — Project-level (team-shared)
+2. CLI --agents flag — Session-specific
+3. ~/.claude/agents/ — User-level (personal)
+4. Plugin agents — System-wide
+5. Built-in agents — Default agents
+
+This means your project can define team conventions while you maintain personal agents for your workflow.
+
+## Creating Custom Agents
+
+Want a specialized agent for database migrations? Create a markdown file in .claude/agents/:
+
+```
+---
+name: db-migration-expert
+description: Database schema migrations, SQL optimization, and data integrity
+model: sonnet
+tools:
+  - Read
+  - Write
+  - Bash
+---
+```
+
+```
+# Database Migration ExpertYou are an expert in database schema design and migrations.## Capabilities
+- Analyze schema changes for potential issues
+- Generate migration scripts
+- Suggest indexing strategies
+- Identify performance implications## Guidelines
+- Always consider backwards compatibility
+- Recommend rollback strategies
+- Check for data loss scenarios
+- Suggest testing approaches
+```
+
+Claude will automatically invoke this agent when you discuss database migrations, keeping your main conversation focused.
 
 
 
