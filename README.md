@@ -260,6 +260,19 @@ These are your bread and butter for managing conversations:
 /status — Shows version info and connectivity status. Great for troubleshooting.
 
 
+## Context & Memory Management
+
+Here’s where Claude Code really shines. Managing context effectively is the difference between a helpful AI and a confused one:
+
+/context — Visualizes your current context usage as a colored grid. Think of this as your context "fuel gauge"—when it fills up, responses slow down and quality degrades.
+
+/compact [instructions] — This is your context compression tool. It summarizes the conversation history while preserving important details. You can add optional instructions like /compact focus on authentication logic to keep specific topics intact.
+
+/memory — Opens your CLAUDE.md memory files for editing. This is where you store project conventions, coding standards, and preferences that persist across sessions.
+
+/init — Initializes a new project with a CLAUDE.md guide. Run this in every new repository.
+
+Pro tip: Use the # prefix for quick memory adds. Type # Use 2-space indentation for JavaScript files and it's instantly added to CLAUDE.md.
 
 
 
