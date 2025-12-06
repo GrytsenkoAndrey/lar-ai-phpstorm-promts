@@ -2,6 +2,7 @@
 
 - [Article Link](https://laraveldaily.com/post/my-cursor-rules-for-laravel)
 - [Claude templates](#claude-templates)
+- [Ultimate Claude Code Cheat Sheet](#ultimate-claude-code-sheet)
 
 ## Files
 
@@ -243,7 +244,9 @@ I tracked token distribution across failed sessions. The pattern is consistent: 
 
 **Agent Collision Syndrome**: Running multiple agents without coordination creates a special kind of chaos. Agent A refactors your database schema while Agent B writes queries for the old structure. Agent C updates the API based on Agent B’s assumptions. Without wave-based generation patterns to manage context limits, agents operate in isolation, creating incompatible implementations at exponential rates.
 
-5. 
+
+# Ultimate Claude Code Sheet
+
 
 
 
