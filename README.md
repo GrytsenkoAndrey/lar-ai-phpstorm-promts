@@ -357,7 +357,86 @@ tools:
 
 Claude will automatically invoke this agent when you discuss database migrations, keeping your main conversation focused.
 
+MCP (Model Context Protocol)
 
+Connect Claude to external tools, databases, and APIs:
+```
+# Add an HTTP server
+claude mcp add --transport http api https://api.example.com \
+  --header "Authorization: Bearer token"
+```
+```
+# Add a local server
+claude mcp add --transport stdio github npx -y @modelcontextprotocol/server-github
+```
+
+Use MCP resources:
+```
+    @github:issue://123 — Reference external resources
+    /mcp__github__list_prs — Execute prompts from MCP servers
+```
+
+Manage servers:
+```
+claude mcp list              # View all servers
+claude mcp get <name>        # Get details
+claude mcp remove <name>     # Remove server
+/mcp                         # In-session authentication
+```
+
+## Hooks System
+
+Automate workflows at specific trigger points:
+
+### Available hooks:
+
+- SessionStart — Run setup scripts
+- SessionEnd — Cleanup or export logs
+- PreToolUse — Validate operations
+- PostToolUse — Log tool usage
+- PermissionRequest — Auto-approve patterns
+- UserPromptSubmit — Pre-process input
+- Stop — Post-process responses
+
+Configure hooks in .claude/settings.json:
+```
+{
+  "hooks": {
+    "SessionStart": {
+      "command": "echo 'Session started'",
+      "enabled": true
+    }
+  }
+}
+```
+
+## Keyboard Shortcuts: Work at the Speed of Thought
+
+### Essential Shortcuts
+
+- Ctrl+C — Cancel current input or generation. Your emergency stop button.
+- Ctrl+R — Search command history. Just like your bash history search.
+- Ctrl+L — Clear screen without clearing conversation.
+- Tab — Toggle extended thinking mode. Let Claude show its reasoning.
+- Shift+Tab or Alt+M — Toggle permission modes on the fly.
+- Esc + Esc — Rewind code or conversation. Made a mistake? Go back.
+- Ctrl+B — Background bash commands. Run long operations without blocking.
+
+## Multiline Input Methods
+
+### Need to write multiple lines? You have options:
+
+- Backslash-enter: \ + Enter
+- Option-enter (macOS): Option + Enter
+- Shift-enter: Shift + Enter (after /terminal-setup)
+- Control sequence: Ctrl+J
+
+### Quick Prefixes
+
+- # — Instant memory add to CLAUDE.md
+- / — Slash commands
+- ! — Direct bash execution (bypasses Claude, runs immediately)
+- @ — File path autocomplete
 
 
 
