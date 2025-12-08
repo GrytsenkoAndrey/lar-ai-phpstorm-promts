@@ -38,6 +38,7 @@
 - Don't add `::query()` when running Eloquent `create()` statements. Example: instead of `User::query()->create()`, use `User::create()`.
 - In Livewire projects, don't use Livewire Volt. Only Livewire class components.
 - When creating pivot tables in migrations, if you use `timestamps()`, then in Eloquent Models, add `withTimestamps()` to the `BelongsToMany` relationships.
+- Run `./vendor/bin/pint` at the end (after changes)
  
 ---
  
