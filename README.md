@@ -3,6 +3,7 @@
 - [Article Link](https://laraveldaily.com/post/my-cursor-rules-for-laravel)
 - [Claude templates](#claude-templates)
 - [Ultimate Claude Code Cheat Sheet](#ultimate-claude-code-sheet)
+- [Models compare](#models-compare)
 
 ## Files
 
@@ -441,7 +442,9 @@ Configure hooks in .claude/settings.json:
 
 
 
+# Models compare
 
+2025-12-09 Opus 4.5 faster and smarter for long task (compare with Sonet)
 
 
 
