@@ -454,6 +454,99 @@ A common layout:
  └─ settings.json # optional structured preferences
 ```
 
+1. rules.md — your coding standards
+
+> Be short. Be specific. Focus on things the AI can follow.
+
+Example:
+
+```
+# Coding Rules
+- Follow the project formatter. Do not change file style.
+- Use logging instead of print. Include error context.
+- Add type hints and docstrings for public functions.
+- Keep functions small; prefer composition over long scripts.
+- Write safe defaults. Handle timeouts and retries where external calls exist.
+
+# Tests
+- Provide a minimal test when adding new modules.
+- Use fakes or fixtures; do not call real services.
+
+# Security
+- Never include secrets in code or examples.
+- Use environment variables or placeholders like <API_KEY>.
+```
+
+2. context.md — the project in plain language
+
+> Give a one-screen brief. No fluff.
+
+Example:
+
+```
+# Project Context
+This is a service that ingests data from an external source, stores it, and exposes a simple API.
+
+Main parts:
+- Ingestion module (scheduled)
+- Storage layer (database + object storage)
+- API service
+- Lightweight UI
+
+Conventions:
+- Config via environment variables
+- Error handling with structured logs
+- CI runs tests and lint on every PR
+
+Dependencies:
+- Runtime: Python 3.11
+- Package: requests, pydantic
+- Tools: Docker, Makefile for common tasks
+```
+
+3. prompts.md — your reusable requests
+
+> Save the prompts you repeat. Keep them task-focused.
+
+Examples:
+
+```
+# Add a module
+Create a new module that does X. Include:
+- A clear, typed interface
+- Error handling and logging
+- A small unit test with a fake
+
+# Improve performance
+Review this function for bottlenecks. Propose changes.
+Explain trade-offs in 3-5 bullet points.
+
+# Write docs
+Draft README instructions for running the project locally:
+- Prereqs
+- Setup
+- Common commands
+- How to run tests
+```
+
+4. settings.json (optional) — structured preferences
+
+> Use this if your tool supports it. Keep it minimal.
+
+Example:
+```
+{
+  "style": {
+    "python": {
+      "use_type_hints": true,
+      "docstrings": true
+    }
+  },
+  "tests": {
+    "require_for_new_modules": true
+  }
+}
+```
 
 
 # Models compare
