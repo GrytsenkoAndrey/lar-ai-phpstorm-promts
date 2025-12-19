@@ -413,6 +413,12 @@ Configure hooks in .claude/settings.json:
 }
 ```
 
+## Hide your .env file
+
+Use Laravel’s env:encrypt for local secrets
+Laravel 11+ supports encrypted .env values.
+Run php artisan env:encrypt and store the decryption key securely.
+
 ## Keyboard Shortcuts: Work at the Speed of Thought
 
 ### Essential Shortcuts
