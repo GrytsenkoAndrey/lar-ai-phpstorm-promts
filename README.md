@@ -3,6 +3,7 @@
 - [Article Link](https://laraveldaily.com/post/my-cursor-rules-for-laravel)
 - [Claude templates](#claude-templates)
 - [Ultimate Claude Code Cheat Sheet](#ultimate-claude-code-sheet)
+- [Claude config](#claude-config)
 - [Models compare](#models-compare)
 
 ## Files
@@ -439,6 +440,19 @@ Configure hooks in .claude/settings.json:
 - / — Slash commands
 - ! — Direct bash execution (bypasses Claude, runs immediately)
 - @ — File path autocomplete
+
+
+# Claude config
+
+A common layout:
+
+```
+.claude/
+ ├─ rules.md      # coding standards and guardrails
+ ├─ context.md    # what this project is and how it runs
+ ├─ prompts.md    # reusable prompt snippets for common tasks
+ └─ settings.json # optional structured preferences
+```
 
 
 
