@@ -1,10 +1,23 @@
 # lar-ai-phpstorm-promts
 
+- [Main idea](#main-idea)
 - [Article Link](https://laraveldaily.com/post/my-cursor-rules-for-laravel)
 - [Claude templates](#claude-templates)
 - [Ultimate Claude Code Cheat Sheet](#ultimate-claude-code-sheet)
 - [Claude config](#claude-config)
 - [Models compare](#models-compare)
+
+
+## Main idea
+
+Understanding Your New Role as an AI Developer
+
+Working with AI fundamentally changes your responsibilities as a developer. You’re no longer just writing code. You become a multi-role professional.
+
+- 1️⃣First, you act as a project manager. You tell AI what to do and when to do it. Clear instructions lead to better results.
+- 2️⃣Second, you serve as a product owner. You define what the final product should look like. Detailed requirements prevent confusion and rework.
+- 3️⃣Third, you function as a senior developer. When AI gets stuck or confused, you step in to guide it back on track.
+
 
 ## Files
 
