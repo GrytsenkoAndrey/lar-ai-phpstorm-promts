@@ -567,6 +567,56 @@ Example:
 }
 ```
 
+## Opus 4.5 max power
+
+In the `settings.json` file
+
+```
+{
+  "env": {
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "64000",
+    "MAX_THINKING_TOKENS": "31999"
+  }
+}
+```
+
+```CLAUDE_CODE_MAX_OUTPUT_TOKENS = 64000```
+
+This determines the duration of Claude’s final answer.
+
+- Default: much smaller
+- With this: Claude can produce very long outputs
+- Ideal for:
+- Large refactors
+- Full-file rewrites
+- Long explanations
+- Multi-step plans with code
+
+Think of this as increasing (or more) Claude’s ability to complete what it begins.
+
+```MAX_THINKING_TOKENS = 31999```
+
+This one is more subtle — and more powerful.
+
+Claude has an internal reasoning phase called extended thinking. These tokens are not part of the visible answer. They are used to:
+
+- Explore multiple solution paths
+- Analyze edge cases
+- Compare trade-offs
+- Catch and correct mistakes before responding
+
+From the official docs:
+
+> Extended thinking uses a token budget that controls how much internal reasoning Claude can perform before responding.
+
+Important clarification:
+
+- **This is a maximum, not a guarantee**
+- Claude will not always use all 31,999 tokens
+- It allows the model to think deeply when necessary.
+
+In other words: You’re removing the ceiling — not forcing unnecessary computation.
+
 
 # Models compare
 
