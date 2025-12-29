@@ -308,7 +308,7 @@ Session Analytics
 
 ## Track your usage and costs:
 
-/usage — Shows your plan limits and rate limit status. Know before you hit the wall.
+**/usage** — Shows your plan limits and rate limit status. Know before you hit the wall.
 
 /export [filename] — Export the conversation to a file or clipboard. Great for sharing solutions or creating documentation.
 
