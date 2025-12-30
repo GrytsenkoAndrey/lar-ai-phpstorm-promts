@@ -6,6 +6,7 @@
 - [Ultimate Claude Code Cheat Sheet](#ultimate-claude-code-sheet)
 - [Claude config](#claude-config)
 - [Models compare](#models-compare)
+- [Claude Code Agent](#cc-agent)
 
 
 ## Main idea
@@ -621,6 +622,10 @@ In other words: You’re removing the ceiling — not forcing unnecessary comput
 # Models compare
 
 2025-12-09 Opus 4.5 faster and smarter for long task (compare with Sonet)
+
+# CC Agent
+
+<img src='cc-agent.png'>
 
 
 
