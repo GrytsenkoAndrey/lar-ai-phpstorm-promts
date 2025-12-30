@@ -625,7 +625,7 @@ In other words: You’re removing the ceiling — not forcing unnecessary comput
 
 # CC Agent
 
-<img src='cc-agent.png'>
+[cc-agent.png](https://github.com/GrytsenkoAndrey/lar-ai-phpstorm-promts/blob/master/cc-agenst.png)
 
 
 
