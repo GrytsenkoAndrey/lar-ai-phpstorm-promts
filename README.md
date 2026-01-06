@@ -642,5 +642,8 @@ What kind of agents can you have? Well you could have a lot (I’ll provide a re
 
 <img width="679" height="510" alt="image" src="https://github.com/user-attachments/assets/62e31409-b516-42ef-9951-9d162e83938d" />
 
+## Create agent
+
+<img width="717" height="2180" alt="cc-agents" src="https://github.com/user-attachments/assets/10d06727-c076-414b-8b3a-3dd707970ce0" />
 
 
