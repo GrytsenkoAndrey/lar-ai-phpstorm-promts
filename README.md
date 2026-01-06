@@ -8,7 +8,8 @@
 - [Models compare](#models-compare)
 - [Claude Code Agent](#cc-agent)
  - [Agents](#agents) 
-
+- [Github Copilot](#github-copilot)
+ - [Code Review](#gc-creview) 
 
 ## Main idea
 
@@ -645,5 +646,12 @@ What kind of agents can you have? Well you could have a lot (I’ll provide a re
 ## Create agent
 
 <img width="717" height="2180" alt="cc-agents" src="https://github.com/user-attachments/assets/10d06727-c076-414b-8b3a-3dd707970ce0" />
+
+
+# Github Copilot
+
+## gc creview
+
+create a `.github/copilot-instaructions.md` file with promts
 
 
