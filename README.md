@@ -627,7 +627,15 @@ In other words: You’re removing the ceiling — not forcing unnecessary comput
 
 <img src='https://github.com/GrytsenkoAndrey/lar-ai-phpstorm-promts/blob/master/cc-agenst.png'>
 
+## Agents
 
+What kind of agents can you have? Well you could have a lot (I’ll provide a repo at the end with a bunch of different ones)
+
+- Planning
+- Design
+- Coding
+- Architecture
+- Bug Fixing
 
 
 
