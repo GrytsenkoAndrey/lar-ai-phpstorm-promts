@@ -7,6 +7,7 @@
 - [Claude config](#claude-config)
 - [Models compare](#models-compare)
 - [Claude Code Agent](#cc-agent)
+ - [Agents](#agents) 
 
 
 ## Main idea
@@ -636,6 +637,10 @@ What kind of agents can you have? Well you could have a lot (I’ll provide a re
 - Coding
 - Architecture
 - Bug Fixing
+
+**Example** (code review)
+
+<img width="679" height="510" alt="image" src="https://github.com/user-attachments/assets/62e31409-b516-42ef-9951-9d162e83938d" />
 
 
 
