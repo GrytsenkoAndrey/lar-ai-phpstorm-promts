@@ -347,9 +347,14 @@ Agent Location Hierarchy
 
 This means your project can define team conventions while you maintain personal agents for your workflow.
 
-## Clear context
+### Clear context
 
 Use `/clear` to clear history between tasks
+
+### Plan mode
+
+Press `shift + tab` twice to use _plane mode_ , claude won't touch any your files
+
 
 
 
