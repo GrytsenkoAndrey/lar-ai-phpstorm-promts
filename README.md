@@ -4,12 +4,13 @@
 - [Article Link](https://laraveldaily.com/post/my-cursor-rules-for-laravel)
 - [Claude templates](#claude-templates)
 - [Ultimate Claude Code Cheat Sheet](#ultimate-claude-code-sheet)
+  - [Creating Custom Agents](#creating-custom-agents) 
 - [Claude config](#claude-config)
 - [Models compare](#models-compare)
 - [Claude Code Agent](#cc-agent)
- - [Agents](#agents) 
+  - [Agents](#agents) 
 - [Github Copilot](#github-copilot)
- - [Code Review](#gc-creview) 
+  - [Code Review](#gc-creview) 
 
 ## Main idea
 
@@ -345,6 +346,12 @@ Agent Location Hierarchy
 5. Built-in agents — Default agents
 
 This means your project can define team conventions while you maintain personal agents for your workflow.
+
+## Clear context
+
+Use `/clear` to clear history between tasks
+
+
 
 ## Creating Custom Agents
 
